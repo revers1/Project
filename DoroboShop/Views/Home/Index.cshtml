@@ -1,0 +1,12 @@
+﻿@model DoroboShop.Models.GroupViewModel
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@Html.Partial("_CategoriesView", Model.Categories)
+
+<div class="container">
+    <div class="row">
+        @Html.Partial("_ProductsView", Model.Products)
+    </div>
+</div>
